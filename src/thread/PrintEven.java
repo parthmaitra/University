@@ -1,4 +1,4 @@
-package Threads;
+package thread;
 
 public class PrintEven implements Runnable{
     Object mutex;

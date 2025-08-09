@@ -1,4 +1,4 @@
-package Threads;
+package thread;
 
 public class PrintOdd implements Runnable{
     Object mutex;

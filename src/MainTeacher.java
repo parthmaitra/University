@@ -10,13 +10,13 @@ public class MainTeacher {
         TeachingStaff teachingStaff = new TeachingStaff();
         teachingStaff.setTeacherType(TeacherType.ADJUNCT);
         switch (teachingStaff.getTeacherType()) {
-            case TeacherType.ADJUNCT :
+            case ADJUNCT:
                 System.out.println("Adjunct Faculty");
                 break;
-            case TeacherType.FULL_TIME_ASSISTANT:
+            case FULL_TIME_ASSISTANT:
                 System.out.println("FULL TIME ASSISTANT Faculty");
                 break;
-            case TeacherType.FULL_TIME_ASSOCIATE:
+            case FULL_TIME_ASSOCIATE:
                 System.out.println("FULL TIME ASSOCIATE Faculty");
                 break;
 
