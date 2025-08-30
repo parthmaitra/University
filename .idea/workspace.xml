@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a07ee51-e21f-4112-b9c5-5980047bdd09" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/javaio/ByteArrayOutputStreamExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java8/streams/College.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java8/streams/DefaultExample1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java8/streams/DefaultExample2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java8/streams/DefaultMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java8/streams/Grade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java8/streams/OptionalExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java8/streams/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java8/streams/StreamsExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java8/streams/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java8/streams/Sum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainTeacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTeacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Threads/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thread/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Threads/PrintEven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thread/PrintEven.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Threads/PrintOdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thread/PrintOdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javaio/ByteArrayOutputStreamExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaio/ByteArrayOutputStreamExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -30,18 +36,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "parthmaitra"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;parthmaitra&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/parthmaitra/University.git",
-    "accountId": "de6d68dc-cf3d-43e4-b571-84603a52b67b"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/parthmaitra/University.git&quot;,
+    &quot;accountId&quot;: &quot;3287797c-8283-4e82-8b9f-0456eccb28bc&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -54,10 +60,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.ByteArrayOutputStreamExample.executor": "Run",
+    "Application.DefaultMain.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MainInheritance.executor": "Run",
     "Application.MainSet.executor": "Run",
     "Application.MainTeacher.executor": "Run",
+    "Application.OptionalExample.executor": "Run",
+    "Application.StreamsExample.executor": "Run",
     "Application.Threads.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -74,13 +83,26 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ByteArrayOutputStreamExample">
+  <component name="RunManager" selected="Application.DefaultMain">
     <configuration name="ByteArrayOutputStreamExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javaio.ByteArrayOutputStreamExample" />
       <module name="University" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="javaio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DefaultMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8.streams.DefaultMain" />
+      <module name="University" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java8.streams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,26 +117,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainInheritance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainInheritance" />
-      <module name="University" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTeacher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainTeacher" />
-      <module name="University" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="thread.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thread.Main" />
+    <configuration name="OptionalExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8.streams.OptionalExample" />
       <module name="University" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thread.*" />
+          <option name="PATTERN" value="java8.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamsExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8.streams.StreamsExample" />
+      <module name="University" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java8.streams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,19 +145,19 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DefaultMain" />
+        <item itemvalue="Application.OptionalExample" />
+        <item itemvalue="Application.StreamsExample" />
         <item itemvalue="Application.ByteArrayOutputStreamExample" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MainTeacher" />
-        <item itemvalue="Application.thread.Main" />
-        <item itemvalue="Application.MainInheritance" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
       </set>
     </attachedChunks>
   </component>
@@ -155,11 +176,27 @@
       <workItem from="1754106424218" duration="930000" />
       <workItem from="1754110894473" duration="6224000" />
       <workItem from="1754715897143" duration="445000" />
+      <workItem from="1754200386279" duration="139000" />
+      <workItem from="1754806082494" duration="11335000" />
+      <workItem from="1756015219295" duration="4762000" />
     </task>
+    <task id="LOCAL-00001" summary="University application">
+      <option name="closed" value="true" />
+      <created>1754200505839</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1754200505839</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="University application" />
+    <option name="LAST_COMMIT_MESSAGE" value="University application" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
