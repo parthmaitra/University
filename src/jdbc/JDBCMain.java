@@ -1,16 +1,20 @@
+package jdbc;
+
+import jdbc.dao.EmployeeDao;
 import model.Employee;
-import write.EmployeeWriter;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.sql.SQLException;
 import java.util.HashMap;
+import java.util.UUID;
 
-public class Main {
+public class JDBCMain {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    static EmployeeWriter employeeWriter = new EmployeeWriter();
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
-        HashMap<String,Employee> listOfEmployees = employeeWriter.readEmployees();
+    static EmployeeDao employeeDao = new EmployeeDao();
+    public static void main(String[] args) throws IOException, ClassNotFoundException, SQLException {
+        HashMap<String, Employee> listOfEmployees = employeeDao.getEmployees();
         System.out.println("Enter the number of Employees");
         int n = Integer.parseInt(br.readLine());
         Employee employee = null;
@@ -23,7 +27,7 @@ public class Main {
                     case "y":
                     case "yes":
                     case "Yes": employee = createEmployee();
-                                break;
+                        break;
                     case "N":
                     case "n":
                     case "no":
@@ -35,12 +39,11 @@ public class Main {
                         System.out.println("Enter the right answer, you moron!");
                 }
                 listOfEmployees.put(employee.getId(),employee);
+                employeeDao.insertEmployee(employee);
             } catch (IOException e) {
                 System.out.println("Error occurred while creating an employee"+e.getMessage());
             }
         }
-        employeeWriter.writeEmployees(listOfEmployees);
-        searchEmployee(listOfEmployees);
     }
     private static void searchEmployee(HashMap<String, Employee> listOfEmployees) throws IOException, ClassNotFoundException {
         System.out.println("Enter the id to be searched");
@@ -55,6 +58,7 @@ public class Main {
     }
     private static Employee createEmployee() throws IOException {
         Employee employee = new Employee();
+        employee.setId(UUID.randomUUID().toString());
         System.out.println("Enter the name of the Employee:");
         String name = br.readLine();
         employee.setName(name);
@@ -76,7 +80,6 @@ public class Main {
         System.out.println("Enter the salary:");
         int salary = Integer.parseInt(br.readLine());
         employee.setSalary(salary);
-        employeeWriter.writeEmployee(employee);
         return employee;
     }
     private static void printEmployeeDetails(Employee employee) {
